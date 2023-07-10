@@ -21,8 +21,9 @@ def get_current_weather():
 
     #pprint(weather_data)
     print(f'\nClima hoje para: {weather_data["name"]}')
-    print(f'\nA Temperatura é: {weather_data["main"]["temp"]}')
-    print(f'\nA Sensação Termica é de: {weather_data["main"]["fells_like"]} and {weather_data["weather"][0]["description"]}.')
+    print(f'\nA Temperatura é: {weather_data["main"]["temp"]} Celsius')
+    print(f'\nA Sensação Termica é de: {weather_data["main"]["feels_like"]} Celsius')
+    #print(f'\nA Sensação Termica é de: {weather_data["weather", "description"]}.')
 
 if __name__ == "__main__":
     get_current_weather()
